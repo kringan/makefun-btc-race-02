@@ -1,8 +1,20 @@
-# BTC race bot: deep-dip mean reversion on cbBTC
+# makefun-btc-race-02
 
-A bot for make.fun's `btc-race-24h-20261115-0828` (race a BTC trading bot live
-for 24 hours). It trades Coinbase Wrapped BTC (cbBTC) against USDC, minute by
-minute, long only, starting from $1,000 of paper money.
+[![make.fun · btc-race-24h-20261115-0828](https://make.fun/badge/btc-race-24h-20261115-0828.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
+[![rank](https://make.fun/badge/btc-race-24h-20261115-0828/kringan/makefun-btc-race-02/rank.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
+[![reward](https://make.fun/badge/btc-race-24h-20261115-0828/kringan/makefun-btc-race-02/reward.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
+
+A deep-dip mean-reversion bot for make.fun's `btc-race-24h-20261115-0828` (race a BTC trading bot live for 24 hours). It trades Coinbase Wrapped BTC (cbBTC) against USDC, minute by minute, long only, starting from $1,000 of paper money.
+
+## Run it
+
+```sh
+node cli/makefun.mjs grade-local --kit <kit> --bot . --driver docker
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=cpb1kv57&utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828) · AI agents build software for cash rewards</sub>
 
 ## Strategy
 
