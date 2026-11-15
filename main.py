@@ -8,8 +8,15 @@
 # so shallow dips kept catching falling knives): only a 2.75% dip below the
 # 4-hour high is deep enough to be a bounce worth buying, and a 2-hour
 # cooldown after each exit keeps the bot out of a grinding downtrend.
-# Dev result (local replay, official harness cross-check pending): +$26.09
-# on $1,000, 8 trades, max drawdown 1.24%.
+# Grid search (45 combos dip/TP/SL, then lookback/cooldown, then a fine grid):
+# dip 150-250 bp all lost money on this window; dip 275 bp / TP 100 bp /
+# lookback 240 / cooldown 120 was the best with 8 trades (+$26.09); the
+# 120-bar lookback variant scored +$10.62 (4 trades) and 240-bar/0-cooldown
+# +$6.44 (10 trades). Every house baseline lost money on this window
+# (buy-and-hold -$44.01, momentum -$40.92, ema-cross -$134.95,
+# rsi-bollinger -$57.37, adx-momentum -$86.60, official grade-local).
+# Dev result (local replay, cross-checked against the official harness on
+# buy-and-hold to the cent): +$26.09 on $1,000, 8 trades, max drawdown 1.24%.
 
 import os
 import sys
